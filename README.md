@@ -1,5 +1,3 @@
-# Whatsapp Cloud API Request Send Message Docs
-
 ## Request Send Text Message to Whatsapp Cloud API
 
 ```
@@ -17,7 +15,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+"messaging_product": "whatsapp",
+"contacts": [
+    {
+        "input": "48XXXXXXXXX",
+        "wa_id": "48XXXXXXXXX "
+    }
+],
+"messages": [
+    {
+        "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+    }
+]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Text Message to Whatsapp Cloud API
 
 ```
@@ -38,7 +76,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Text Message with Preview URL to Whatsapp Cloud API
 
 ```
@@ -54,7 +132,43 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+  "messaging_product": "whatsapp",
+  "contacts": [{
+      "input": "15555551234",
+      "wa_id": "<WHATSAPP_ID>"
+    }],
+  "messages": [{
+      "id": "wamid.ID"
+    }]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply with Reaction Message to Whatsapp Cloud API
 
 ```
@@ -72,7 +186,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "<PHONE_NUMBER>",
+            "wa_id": "<WHATSAPP_ID>"
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.HBgLM..."
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Image Message by ID to Whatsapp Cloud API
 
 ```
@@ -89,7 +243,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Image Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -108,7 +302,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Image Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -124,7 +358,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Image Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -143,7 +417,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Audio Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -159,7 +473,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Audio Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -178,7 +532,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Audio Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -194,7 +588,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Audio Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -213,7 +647,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Document Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -231,7 +705,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Document Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -252,7 +766,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Document Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -269,7 +823,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Document Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -289,7 +883,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Sticker Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -305,7 +939,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Sticker Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -324,7 +998,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Sticker Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -340,7 +1054,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Sticker Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -359,7 +1113,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Video Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -376,7 +1170,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Video Message by ID to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -396,7 +1230,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 
 
 ## Request Send Video Message by URL to Whatsapp Cloud API
@@ -415,7 +1289,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Video Message by URL to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -435,7 +1349,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Contact Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -495,7 +1449,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     ]
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Contact Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -558,7 +1552,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     ]
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Location Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -577,7 +1611,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to Location Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -599,7 +1673,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Message Template Text to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -650,7 +1764,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Message Template Media to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -712,7 +1866,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Message Template Interactive to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -796,7 +1990,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "48XXXXXXXXX",
+            "wa_id": "48XXXXXXXXX "
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGSFcCNEOPAgkO_KJ55r4w_ww"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send List Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -857,7 +2091,43 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [{
+        "input": "15555551234",
+        "wa_id": "<WHATSAPP_ID>"
+      }],
+    "messages": [{
+        "id": "wamid.ID"
+      }]
+  }
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply to List Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -921,7 +2191,43 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [{
+        "input": "15555551234",
+        "wa_id": "<WHATSAPP_ID>"
+      }],
+    "messages": [{
+        "id": "wamid.ID"
+      }]
+  }
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Reply Button to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -958,7 +2264,43 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [{
+        "input": "PHONE_NUMBER",
+        "wa_id": "WHATSAPP_ID"
+      }],
+    "messages": [{
+        "id": "wamid.ID"
+      }]
+  }
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Mark Message As Read to Whatsapp Cloud API
 ```
 PUT https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -970,7 +2312,36 @@ PUT https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     "message_id": "<INCOMING_MSG_ID>"
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "success": true
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Single Product Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -996,7 +2367,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "+1-631-555-5555",
+            "wa_id": "16315555555"
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGFlaCGg0xcvAdgmZ9plHrf2Mh-o"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Multi-Product Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -1049,7 +2460,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "+1-631-555-5555",
+            "wa_id": "16315555555"
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.gBGGFlaCGg0xcvAdgmZ9plHrf2Mh-o"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Catalog Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -1077,7 +2528,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "+16505551234",
+            "wa_id": "16505551234"
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.HBgLMTY1MDM4Nzk0MzkVAgARGBI3NDMzMjc2N0VDNUVFNURBQzQA"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 ## Request Send Catalog Template Message to Whatsapp Cloud API
 ```
 POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
@@ -1128,7 +2619,47 @@ POST https://graph.facebook.com/{{Version}}/{{Phone-Number-ID}}/messages:
     }
 }
 ```
-
+SUCCESS RESPONSE:
+```
+{
+    "messaging_product": "whatsapp",
+    "contacts": [
+        {
+            "input": "+16505551234",
+            "wa_id": "16505551234"
+        }
+    ],
+    "messages": [
+        {
+            "id": "wamid.HBgLMTY1MDM4Nzk0MzkVAgARGBJCOTY3NDc0NDFDRUI3NTA0Q0UA"
+        }
+    ]
+}
+```
+ERROR RESPONSE:
+```
+{
+  "statuses": [
+    {
+      "errors": [
+        {
+          "code": 1026,
+          "href": "https://developers.facebook.com/docs/whatsapp/api/errors/",
+          "title": "Receiver Incapable"
+        }
+      ],
+      "id": "gBGGFlAwCWFvAgkyHMGKnRu4JeA",
+      "message": {
+        "recipient_id": "+91xxxxxxxxxx"
+      },
+      "recipient_id": "91xxxxxxxxxx",
+      "status": "failed",
+      "timestamp": "1670394125",
+      "type": "message"
+    }
+  ]
+}
+```
 /* template of request doc */
 Request  to Whatsapp Cloud API
 ```
